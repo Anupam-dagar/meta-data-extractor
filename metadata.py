@@ -44,6 +44,8 @@ def generic_metadata(meta_tag):
 # Driver function to run the script
 def main():
     input_url = str(input("Enter website url:\n"))
+    if not (input_url.startswith('http://') or input_url.startswith('https://')):
+        input_url = 'http://' + input_url
     source_code = read_sourcecode(input_url)
     
     soup = BeautifulSoup(source_code, 'lxml')
