@@ -10,3 +10,5 @@
 2. Beautiful Soup
 3. json
 4. sys
+
+MIT LICENSE
